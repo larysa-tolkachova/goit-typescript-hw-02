@@ -54,3 +54,6 @@ export default tseslint.config({
 ```
 
 <!-- npm i --save-dev @types/react-modal / -->
+<!-- npm install --save react-spinners -->
+<!-- npm list react-helmet -->
+<!-- npm i typescript-toastify -->

@@ -8,7 +8,7 @@ import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
 import { Image } from "./services/types";
-// import { showToast } from "./services/toast";
+import { showToast } from "./services/toast";
 
 function App() {
   const [images, setImages] = useState<Image[]>([]);
@@ -22,8 +22,7 @@ function App() {
 
   const handleSearch = (newImages: string): void => {
     if (!newImages.trim()) {
-      // showToast("The field is empty. Please enter a query", "warning");
-      alert("The field is empty. Please enter a query");
+      showToast("The field is empty. Please enter a query", "warning");
       return;
     }
 
@@ -44,8 +43,7 @@ function App() {
         const request: Image[] = await fetchArt(page, search);
 
         if (request.length === 0) {
-          // showToast("No images found. Try another search term", "info");
-          alert("No images found. Try another search term");
+          showToast("No images found. Try another search term", "info");
           return;
         }
 
