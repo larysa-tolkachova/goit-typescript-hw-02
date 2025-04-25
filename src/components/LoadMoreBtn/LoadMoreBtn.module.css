@@ -1,0 +1,15 @@
+.btn {
+  width: 100px;
+  height: 40px;
+
+  border: 1px solid #646cff;
+  border-radius: 8px;
+  color: #646cff;
+  background-color: #dcdcdc;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #f5f5f5;
+  background-color: #2f4f4f;
+}
